@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib import messages
+from .models import Student
 
 
 def home(request):
@@ -38,3 +40,13 @@ def doLogin(request):
 
 def insert(request):
     return render(request, 'insert.html')
+
+
+def view_student(request):
+    return render(request, 'view.html')
+
+
+def view_student(request, student_id):
+    a_list = Student.objects.filter(id=student_id)
+    context = {'id': student_id, 'student': a_list}
+    return render(request, 'view.html', context)
