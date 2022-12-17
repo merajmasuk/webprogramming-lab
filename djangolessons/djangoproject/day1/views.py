@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse
 from . import forms, models
 
 
@@ -34,6 +35,24 @@ def GetStudent(request, **kwargs):
 
 def DeleteStudent(request, **kwargs):
     reg = kwargs.get('reg')
-    student = models.Student.get(reg_no=reg)
+    student = models.Student.objects.get(reg_no=reg)
     student.delete()
     return redirect(CreateStudent)
+
+
+def UpdateStudent(request, **kwargs):
+    Id = kwargs.get('id')
+    student = models.Student.objects.get(id=Id)
+    if request.method == "POST":
+        form = forms.CreateStudentForm(instance=student)
+        student.name = request.POST['name']
+        student.present_address = request.POST['present_address']
+        student.reg_no = request.POST['reg_no']
+        student.save()
+        print(student)
+        print(request)
+        return redirect(reverse('.views.GetStudent', kwargs=dict(student)))
+    else:
+        form = forms.CreateStudentForm(instance=student)
+        context = {'student': student, 'form': form}
+        return render(request, 'update.html', context)
