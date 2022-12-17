@@ -1,2 +1,2 @@
-# student-information-management-webdev
+# Web Programming Lab Course
 Repository for Student Information Management webapp project
