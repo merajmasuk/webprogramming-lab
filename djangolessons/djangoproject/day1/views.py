@@ -43,16 +43,12 @@ def DeleteStudent(request, **kwargs):
 def UpdateStudent(request, **kwargs):
     Id = kwargs.get('id')
     student = models.Student.objects.get(id=Id)
+    form = forms.CreateStudentForm(instance=student)
     if request.method == "POST":
-        form = forms.CreateStudentForm(instance=student)
-        student.name = request.POST['name']
-        student.present_address = request.POST['present_address']
-        student.reg_no = request.POST['reg_no']
-        student.save()
-        print(student)
-        print(request)
-        return redirect(reverse('.views.GetStudent', kwargs=dict(student)))
-    else:
-        form = forms.CreateStudentForm(instance=student)
-        context = {'student': student, 'form': form}
-        return render(request, 'update.html', context)
+        form = forms.CreateStudentForm(request.POST, instance=student)
+        if form.is_valid():
+            form.save()
+            return redirect(GetStudent)
+    
+    context = {'student' : student, 'form': form}
+    return render(request, 'update.html', context)
