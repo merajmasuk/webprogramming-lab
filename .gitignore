@@ -116,6 +116,14 @@ bin/
 lib64
 *.cfg
 
+# Conda
+compiler_compat/
+conda-meta/
+include/
+man/
+share/
+ssl/
+
 # Spyder project settings
 .spyderproject
 .spyproject
