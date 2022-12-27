@@ -20,7 +20,7 @@ def employee_list(request):
         return JsonResponse(serializer.errors, status=400)
 
 @csrf_exempt
-def employee_detail(request,pk):
+def employee_detail(request, pk):
     try:
         employee = models.Employee.objects.get(pk=pk)
     except models.Employee.DoesNotExist:
