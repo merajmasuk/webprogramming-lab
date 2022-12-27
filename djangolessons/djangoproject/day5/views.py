@@ -8,25 +8,27 @@ from rest_framework import status, mixins, generics
 # Create your views here.
 from . import models, serializer
 
-class EmployeeList(mixins.ListModelMixin, mixins.CreateModeMixin, generics.GenericAPIView):
+#class EmployeeList(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView):
+class EmployeeList(generics.ListCreateAPIView):
     """
     List all Employee, or create a new Employee.
     """
     queryset = models.Employee.objects.all()
     serializer_class = serializer.EmployeeSerializer
 
-    def get(self, request, *args, **kwargs):
-        return self.list(request, *args, **kwargs)
+    # def get(self, request, *args, **kwargs):
+    #     return self.list(request, *args, **kwargs)
 
-    def post(self, request, format=None):
-        return self.create(request, *args, **kwargs)
+    # def post(self, request, format=None):
+    #     return self.create(request, *args, **kwargs)
 
 
 # class EmployeeList(APIView):
-class EmployeeDetail(mixins.RetrieveModelMixin,
-                mixins.UpdateModeMixin,
-                mixins.DestroyModeMixin.
-                generics.GenericAPIView):
+# class EmployeeDetail(mixins.RetrieveModelMixin,
+#                 mixins.UpdateModelMixin,
+#                 mixins.DestroyModelMixin,
+#                 generics.GenericAPIView):
+class EmployeeDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     Retriece, update or delete an Employee instance
     """
@@ -43,11 +45,11 @@ class EmployeeDetail(mixins.RetrieveModelMixin,
     #     employeeSerializer = serializer.EmployeeSerializer(employee)
     #     return Response(employeeSerializer)
 
-    def get(self, request, *args, **kwargs):
-        return self.retrieve(request, *args, **kwargs)
+    # def get(self, request, *args, **kwargs):
+    #     return self.retrieve(request, *args, **kwargs)
 
-    def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
+    # def put(self, request, *args, **kwargs):
+    #     return self.update(request, *args, **kwargs)
 
-    def delete(self, request, *args, **kwargs):
-        return self.destroy(request, *args, **kwargs)
+    # def delete(self, request, *args, **kwargs):
+    #     return self.destroy(request, *args, **kwargs)
