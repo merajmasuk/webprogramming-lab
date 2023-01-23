@@ -13,7 +13,7 @@ from . import models
 class EmployeeBaseView(View):
     model = models.Employee
     fields = '__all__'
-    success_url = reverse_lazy('day3App:all')
+    success_url = reverse_lazy('day3:all')
 
 
 class EmployeeListView(EmployeeBaseView, ListView):

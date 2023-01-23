@@ -1,2 +1,2 @@
 # Web Programming Lab Course
-Repository for Student Information Management webapp project
+A Monolithic Repository for Web Programming Lab Project
