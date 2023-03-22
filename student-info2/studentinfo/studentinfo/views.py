@@ -49,3 +49,8 @@ def updaterecord(request, id):
     member.lastname = last
     member.save()
     return HttpResponseRedirect(reverse('index'))
+
+
+def preview(request):
+    template = loader.get_template('home.html')
+    return HttpResponse(template.render({}, request))
