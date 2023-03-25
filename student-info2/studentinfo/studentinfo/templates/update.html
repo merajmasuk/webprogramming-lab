@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% load static %}
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Student Management System</title>
-</head>
-<body>
+
+{% extends 'base.html' %}
+
+
+{% block content %}
   <<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Student Management System</a>
@@ -29,20 +23,18 @@
       </form>
     </div>
   </div>
-</nav>
+  </nav>
 
   <h1 align="center">Update Student</h1>
 
-<form action="updaterecord/{{ mymember.id }}" method="post">
-{% csrf_token %}
-First Name:<br>
-<input name="first" value="{{ mymember.firstname }}">
-<br><br>
-Last Name:<br>
-<input name="last" value="{{ mymember.lastname }}">
-<br><br>
-<input type="submit" value="Submit">
-</form>
-</body>
-</head>
-</html>
+  <form action="updaterecord/{{ mymember.id }}" method="post">
+  {% csrf_token %}
+  First Name:<br>
+  <input name="first" value="{{ mymember.firstname }}">
+  <br><br>
+  Last Name:<br>
+  <input name="last" value="{{ mymember.lastname }}">
+  <br><br>
+  <input type="submit" value="Submit">
+  </form>
+{% endblock content %}

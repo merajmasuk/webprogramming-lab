@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Student Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">All Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Students</a>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <h1 align="center">View Student</h1>
+
+  <form action="updaterecord/{{ mymember.id }}" method="post">
+  {% csrf_token %}
+  First Name:<br>
+  <input name="first" value="{{ mymember.firstname }}">
+  <br><br>
+  Last Name:<br>
+  <input name="last" value="{{ mymember.lastname }}">
+  <br><br>
+  <input type="submit" value="Submit">
+  </form>
+{% endblock content %}
