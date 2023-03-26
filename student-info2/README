@@ -1,1 +1,27 @@
+
+### Install Dependencis
 $ pip install -r requirements.txt
+
+### Multiple Databases
+To use multiple databases you have to tell Django about the database server you will be using, but adding them in the settings.py.
+
+Multiple databases
+
+    'default': {
+        'NAME': 'app_data',
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'postgres_user',
+        'PASSWORD': 's3krit'
+    },
+    'users': {
+        'NAME': 'user_data',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'mysql_user',
+        'PASSWORD': 'priv4te'
+    }
+
+The migrate management command operates on one database at a time. By default, it operates on the default database, but by providing the --database option, you can tell it to synchronize a different database.
+
+```
+python manage.py migrate --database=users
+```
