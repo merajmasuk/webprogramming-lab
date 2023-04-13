@@ -1,0 +1,291 @@
+header {
+	font-family: Lobster !important;
+	font-size: 40px;
+	text-align: center;
+}
+body {
+	font-family: Roboto Condensed, sans-serif;
+	background-color: lightblue;
+	word-spacing: 1px;
+	margin: 75px;
+	-webkit-font-smoothing: antialiased
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-radius: 5px;
+}
+
+#personal-belongings {
+    font-family: "Microsoft Sans Serif", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#personal-belongings thead{
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+	border-radius: 5px;
+}
+#personal-belongings tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#personal-belongings tfoot {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#personal-belongings caption {
+	border: 1px solid #ddd;
+	padding: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+}
+#personal-belongings td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#personal-belongings tr:{background-color: #f2f2f2;} /* nth-child(even) */
+#personal-belongings tr:hover {background-color: #ddd;}
+#personal-belongings th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+[type='radio']{
+	margin: 10px 5px 10px 15px;
+}
+[type='checkbox']{
+	margin: 10px 5px 10px 15px;
+}
+	
+.small-icon {
+	height: 100px;
+	width: 100px;
+}
+
+#thumbnail1 {
+	color: #00CED1;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 10px 5px 10px 5px;
+	padding: 15px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	line-height: 25px;
+	font-weight: 100;
+	background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+	transform: skewX(-0.5deg);
+}
+#spotify {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 10px 5px 10px 5px;
+	padding: 15px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	line-height: 25px;
+	font-weight: 100;
+	background: linear-gradient(60deg, #CCFFFF, #FFCCCC);
+	transform: skewY(-0.5deg);
+}
+
+.links {
+	text-align: left;
+	color: black;
+}
+.links: hover{
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+.btn {
+	border: none; /* Remove borders */
+	border-radius: 5px;
+	color: white; /* Add a text color */
+	padding: 14px 28px; /* Add some padding */
+	cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+input, textarea, select {
+	border-radius: 5px;
+	margin: 2px;
+	padding: 14px 28px; /* Add some padding */
+	cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+
+#navbar{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+#sidebar{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+}
+nav li {
+	display: inline;
+	float: left;
+	padding: 0px 0px 0px 0px ;
+	background-color: hsla(0, 0%, 50%, 1) !important;
+}
+nav li:hover{
+	transform: scale(1.1) skewX(-5deg);
+}
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+nav li a:hover {
+  background-color: #111111;
+}
+
+ul {
+	margin: 1px;
+	padding: 10px 10px 10px 20px;
+	overflow: hidden;
+	background-color: hsla(0, 0%, 50%, 1);
+}
+ol {
+	margin: 1px;
+	padding: 10px 10px 10px 20px;
+	overflow: hidden;
+	background-color: hsla(0, 0%, 50%, 1);
+}
+
+ul li {
+	color: white;
+	margin-left: 20px;
+	padding: 5px 5px 5px 5px;
+	background-color: hsl(0, 0%, 25%);
+	list-style-position: outside;
+}
+ol li {
+	color: white;
+	margin-left: 20px;
+	padding: 5px 5px 5px 5px;
+	background-color: hsl(0, 0%, 25%);
+	list-style-position: outside;
+}
+dl{
+	margin: 1px;
+	padding: 10px 10px 10px 20px;
+	overflow: hidden;
+	background-color: hsla(0, 0%, 50%, 1);
+}
+dt{
+	color: white;
+	padding: 5px 5px 5px 5px;
+	background-color: hsl(0, 0%, 25%);
+}
+dd{
+	color: white;
+	padding: 5px 5px 5px 5px;
+	background-color: hsl(0, 0%, 25%);
+}
+
+#left {
+	float: left;
+	z-index: 1;
+}
+#right {
+	float: right;
+}
+
+/* calendar */
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}

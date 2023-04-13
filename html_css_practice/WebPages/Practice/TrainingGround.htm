@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Training Ground</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="Resources\Images\M.png" rel="shortcut icon">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+		<link href="Resources/Styles/main.css" rel="stylesheet" type="text/css">
+		<link href="Resources/Styles/penguin.css" rel="stylesheet" type="text/css">
+		<link href="Resources/Styles/penguin.css" type="text/javascript">
+		
+		<style>
+			.balls{
+				border-radius: 50%;
+				background: linear-gradient(
+				  35deg,
+				  #ccffff,
+				  #ffcccc
+				);
+				position: fixed;  
+				width: 50px;
+				height: 50px;
+				margin-top: 50px;
+				animation-name: bounce;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+			#ball1 { 
+				left: 27%;
+				animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+			}
+			#ball2 { 
+				left: 56%;
+				animation-timing-function: ease-out;
+			}
+			@keyframes bounce {
+				0% {
+					top: 0px;
+				} 
+				100% {
+					top: 249px;
+				}
+			}
+			
+		</style>
+		
+		<base></base>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" 	 content="HTML,CSS,XML,JavaScript">
+		<meta name="author" 	   content="Meraj al Maksud">
+		<meta name="viewport" 	 content="width=device-width, initial-scale=1.0">
+		
+	</head>
+	
+	<body>
+		<nav id="navbar">
+			<ul>
+				
+				<li><a href="#jumptotop">Top</a></li>
+				<li><a href="#formdirect">Form</a></li>
+				<li><a href="#thumbnail">Thumbnail</a></li>
+				<li><a href="#personal-belongings">Table</a></li>
+				<li><a href="#listdirect">List</a></li>
+				<li><a href="#droptobottom">Bottom</a></li>
+				
+			</ul>
+		</nav>
+
+		<aside id="left">
+			<nav id="sidebar">
+			<ul>
+				<li><a href="#jumptotop">Top</a></li>
+				<li><a href="#formdirect">Form</a></li>
+				<li><a href="#thumbnail">Thumbnail</a></li>
+				<li><a href="#personal-belongings">Table</a></li>
+				<li><a href="#listdirect">List</a></li>
+				<li><a href="#droptobottom">Bottom</a></li>
+			</ul>
+			</nav>
+		</aside>
+
+		<section id="right">
+			<header id="jumptotop">Hello, World!</header>
+			<center><a href="#droptobottom">Drop to bottom</a><br></center>
+			
+			<div class="balls" id="ball1"></div>
+			<div class="balls" id="ball2"></div>
+			
+			<div class="penguin">
+				<div class="penguin-bottom">
+					<div class="right-hand"></div>
+					<div class="left-hand"></div>
+					<div class="right-feet"></div>
+					<div class="left-feet"></div>
+				</div>
+				<div class="penguin-top">
+					<div class="right-cheek"></div>
+					<div class="left-cheek"></div>
+					<div class="belly"></div>
+					<div class="right-eye">
+						<div class="sparkle"></div>
+					</div>
+					<div class="left-eye">
+						<div class="sparkle"></div>
+					</div>
+					<div class="blush-right"></div>
+					<div class="blush-left"></div>
+					<div class="beak-top"></div>
+					<div class="beak-bottom"></div>
+				</div>
+			</div>
+			
+			<img src="https://cdn.sstatic.net/Img/unified/sprites.svg?v=e5e58ae7df45">
+			
+			<div style="text-align: center">
+				<img src="" alt="Blank Image"><br>
+				<input class="btn info" type="button" value="Click me" onclick="msg()"> 
+			</div>
+			
+			<main>
+				Current Progress: <progress value="90" max="100"></progress> 90%<br><br>
+			
+				Add your homepage: <input type="url" name="homepage"><br><br>
+				
+				<div>
+					<embed src="Resources\GIF\WatchDogs.gif" height="315" type="" width="30%">
+				
+					<video width="30%" height="315" controls loop poster="">
+						<source src="Resources/Video/i am sorry.mp4" type="video/mp4">
+						<source src="" type="video/ogg">
+						<source src="" type="video/webm">
+						<track src="" kind="subtitles" srclang="en" label="English">
+						<track src="" kind="subtitles" srclang="no" label="Norwegian">
+					</video>
+				
+					<iframe width="30%" height="315" src="https://www.youtube.com/embed/npQRCp77eSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						<p>Your browser does not support iframes.</p>
+					</iframe>
+				<div>
+				
+				Select a time: <input type="time" name="usr_time"><br>
+				Search Google: <input type="search" q="googlesearch"><input type="submit"><br><br>
+				
+				<div>
+					<audio controls loop>
+						<source src="Resources/Audio/avalanche.mp3" type="audio/mp3">
+						<source src="" type="audio/ogg">
+						<source src="" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+					<audio controls loop>
+						<source src="Resources/Audio/myheartisbroken.mp3" type="audio/mp3">
+						<source src="" type="audio/ogg">
+						<source src="" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+				
+				<object data="horse.wav">
+					<param name="autoplay" value="true">
+				</object>
+				
+				<picture>
+					<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+					<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+					<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+				</picture> 
+				
+				<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+				<input type="range" id="a" value="50">100
+				+<input type="number" id="b" value="50">
+				=<output name="x" for="a b"></output>
+				</form>
+			
+				<div>
+					<figure>
+						<a href="https://google.com">
+							<img class="small-icon" src="Resources\Images\G.png" alt="Google Search">
+						</a>
+						<figcaption>Google Search</figcaption>
+					</figure>
+					<br>
+					<a class="btn info links" href="https://stackoverflow.com/reputation" target="_blank">
+						My StackOverflow rep history
+					</a>
+					<a class="btn success links" href="https://google.com" target="_blank">New Tab</a>
+					<a class="btn danger links" href="#">Dead Link</a>
+					<a class="btn info links" href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">
+						Colors
+					</a>
+					<a class="btn info links" href="https://www.w3schools.com/tags/tag_area.asp" target="_blank">
+						area tag and map tag
+					</a>
+					<a class="btn info links" href="https://css-tricks.com/solved-with-css-logical-styling-based-on-the-number-of-given-elements/" target="_blank">
+						CSS Tricks
+					</a><br>
+				</div>
+				
+				<br>
+				
+				<svg width="100" height="100">
+					<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+				</svg>
+
+				<br>
+				
+	<!-- form starts here -->
+				<form action="/search" id="formdirect">
+					<fieldset name="javascript">
+						<legend>Personalia:</legend>
+						Name: <input type="text" placeholder="Enter your name"><br>
+						E-mail: <input type="email" name="email" placeholder="Enter your E-mail" autocomplete="on"><br>
+						Mobile No: <input type="tel" name="mobileno"><br>
+						Password: <input type="password" name="pwd"><br>
+						Date of birth: 
+						<input type="date" name="bday" min="1901-01-01" max="2019-12-31"><br>
+						Date of birth: 
+						<input type="datetime-local" name="bdaytime"><br>
+						Date of birth: 
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						
+						<select>
+							<option value="January">January</option>
+							<option value="February">February</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+						</select>
+						
+						<select>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+							<option value="2011">2011</option>
+							<option value="2010">2010</option>
+							<option value="2009">2009</option>
+							<option value="2008">2008</option>
+							<option value="2007">2007</option>
+							<option value="2006">2006</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+							<option value="1997">1997</option>
+							<option value="1996">1996</option>
+							<option value="1995">1995</option>
+							<option value="1994">1994</option>
+							<option value="1993">1993</option>
+							<option value="1992">1992</option>
+							<option value="1991">1991</option>
+							<option value="1990">1990</option>
+							<option value="1989">1989</option>
+							<option value="1988">1988</option>
+							<option value="1987">1987</option>
+							<option value="1986">1986</option>
+							<option value="1985">1985</option>
+							<option value="1984">1984</option>
+							<option value="1983">1983</option>
+							<option value="1982">1982</option>
+							<option value="1981">1981</option>
+							<option value="1980">1980</option>
+							<option value="1979">1979</option>
+							<option value="1978">1978</option>
+							<option value="1977">1977</option>
+							<option value="1976">1976</option>
+							<option value="1975">1975</option>
+							<option value="1974">1974</option>
+							<option value="1973">1973</option>
+							<option value="1972">1972</option>
+							<option value="1971">1971</option>
+							<option value="1970">1970</option>
+							<option value="1969">1969</option>
+							<option value="1968">1968</option>
+							<option value="1967">1967</option>
+							<option value="1966">1966</option>
+							<option value="1965">1965</option>
+							<option value="1964">1964</option>
+							<option value="1963">1963</option>
+							<option value="1962">1962</option>
+							<option value="1961">1961</option>
+							<option value="1960">1960</option>
+							<option value="1959">1959</option>
+							<option value="1958">1958</option>
+							<option value="1957">1957</option>
+							<option value="1956">1956</option>
+							<option value="1955">1955</option>
+							<option value="1954">1954</option>
+							<option value="1953">1953</option>
+							<option value="1952">1952</option>
+							<option value="1951">1951</option>
+							<option value="1950">1950</option>
+							<option value="1949">1949</option>
+							<option value="1948">1948</option>
+							<option value="1947">1947</option>
+							<option value="1946">1946</option>
+							<option value="1945">1945</option>
+							<option value="1944">1944</option>
+							<option value="1943">1943</option>
+							<option value="1942">1942</option>
+							<option value="1941">1941</option>
+							<option value="1940">1940</option>
+							<option value="1939">1939</option>
+							<option value="1938">1938</option>
+							<option value="1937">1937</option>
+							<option value="1936">1936</option>
+							<option value="1935">1935</option>
+							<option value="1934">1934</option>
+							<option value="1933">1933</option>
+							<option value="1932">1932</option>
+							<option value="1931">1931</option>
+							<option value="1930">1930</option>
+							<option value="1929">1929</option>
+							<option value="1928">1928</option>
+							<option value="1927">1927</option>
+							<option value="1926">1926</option>
+							<option value="1925">1925</option>
+							<option value="1924">1924</option>
+							<option value="1923">1923</option>
+							<option value="1922">1922</option>
+							<option value="1921">1921</option>
+							<option value="1920">1920</option>
+							<option value="1919">1919</option>
+							<option value="1918">1918</option>
+							<option value="1917">1917</option>
+							<option value="1916">1916</option>
+							<option value="1915">1915</option>
+							<option value="1914">1914</option>
+							<option value="1913">1913</option>
+							<option value="1912">1912</option>
+							<option value="1911">1911</option>
+							<option value="1910">1910</option>
+						</select>
+						
+						<br>
+						
+						Birthday (month and year): <input type="month" name="bdaymonth"><br>
+						Select a week: <input type="week" name="week_year"><br>
+						
+						Age: <input type="number" name="age" min="3" max="115"><br>
+						Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+						Legal number: <input type="number" step="4">
+						<input type="hidden" id="custId" name="custId" value="3487"><br>
+						
+						Description:<br>
+						<textarea rows="4" cols="50" id="" maxlength="50" wrap="hard">Enter text here...</textarea>
+						<!-- autofocus disabled -->
+						<textarea rows="4" cols="50" id="" maxlength="50" wrap="hard" readonly>Enter text here...</textarea>
+			
+						<br>
+				
+						<input type="text" placeholder="This is required" required>
+						<input type="text" placeholder="This is optional">
+						<input type="text" placeholder="This should be empty" disabled>
+						
+						<br>
+						
+						<label>
+							<input type="radio" name="multiple-choice" checked>1<sup>st</sup> option
+						</label>
+						<label>
+							<input type="radio" name="multiple-choice">2<sup>nd</sup> option
+						</label>
+						
+						<br>
+						
+						<input list="browsers" name="browser">
+						<datalist id="browsers">
+							<option value="Google Chrome">
+							<option value="Firefox">
+							<option value="Microsoft Edge">
+							<option value="Opera">
+							<option value="Safari">
+							<option value="Internet Explorer">
+						</datalist>
+						
+						<br>
+						
+						<label for="first">
+							<input id="first" type="checkbox" name="javascript">I agree with all <a href="#">terms and services.</a><br>
+						</label>
+						<label for="first">
+							<input id="first" type="checkbox" name="javascript" checked>I solemnly swear that I am up to no good.<br>
+						</label>
+						
+						<input class="btn default" type="file" name="pic" accept="image/*" multiple>
+						<input type="image" src="" alt="Submit" width="40" height="20"><br>
+						<input class="btn danger" type="reset">
+						<button class="btn success" type="submit">Sign up</button><br>
+						
+						Select language: 
+						<label>
+							<input type="radio" name="language">English (US)
+						</label>
+						<label>
+							<input type="radio" name="language">English (UK)
+						</label>
+						<label>
+							<input type="radio" name="language"><bdi>বাংলা</bdi>
+						</label>
+						
+						<br>
+						
+						<button class="btn success">Success</button>
+						<button class="btn info">Info</button>
+						<button class="btn warning">Warning</button>
+						<button class="btn danger">Danger</button>
+						<button class="btn default">Default</button> 
+					
+					</fieldset>			
+					
+					<fieldset id="calendar">
+						<div class="month">
+							<ul>
+								<li class="prev">&#10094;</li>
+								<li class="next">&#10095;</li>
+								<li>August<br><span style="font-size:18px">2017</span></li>
+							</ul>
+						</div>
+
+						<ul class="weekdays">
+							<li>Mo</li>
+							<li>Tu</li>
+							<li>We</li>
+							<li>Th</li>
+							<li>Fr</li>
+							<li>Sa</li>
+							<li>Su</li>
+						</ul>
+
+						<ul class="days">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li><span class="active">10</span></li>
+							<li>11</li>
+							...etc
+						</ul>
+					</fieldset>
+					
+					<br>
+					Vehicle Manufacturers: 
+					<select>
+						<optgroup label="American">
+							<option value="cadillac">Cadillac</option>
+							<option value="chrysler">Chrysler</option>
+							<option value="chevrolet">Chevrolet</option>
+							<option value="dodge">Dodge</option>
+							<option value="ford">Ford</option>
+							<option value="fiat">Fiat</option>
+							<option value="gm">General Motors</option>
+							<option value="hummer">Hummer</option>
+							<option value="jeep">Jeep</option>
+							<option value="tesla">Tesla</option>
+						</optgroup>
+						<optgroup label="European">
+							<option value="astonmartin">Aston Martin</option>
+							<option value="audi">Audi</option>
+							<option value="bentley">Bentley</option>
+							<option value="bmw">BMW</option>
+							<option value="ferrari">Ferrari</option>
+							<option value="jaguar">Jaguar</option>
+							<option value="lamborghini">Lamborghini</option>
+							<option value="landrover">Land Rover</option>
+							<option value="mclaren">McLaren</option>
+							<option value="mercedes">Mercedes</option>
+							<option value="porsche">Porsche</option>
+							<option value="vw">Volkswagen</option>
+							<option value="volvo">Volvo</option>
+						</optgroup>
+						<optgroup label="Japanese">
+							<option value="honda">Acura</option>
+							<option value="honda">Honda</option>
+							<option value="mazda">Mazda</option>
+							<option value="mitshubishi">Mitshubishi</option>
+							<option value="nissan">Nissan</option>
+							<option value="subaru">Subaru</option>
+							<option value="toyota">Toyota</option>
+						</optgroup>
+					</select>
+					
+					<br>
+					Pick a color: <input type="color" name="favcolor" value="#ff0000">
+				</form>
+				
+				<br><hr><br>
+
+	<!-- end of form -->
+
+				<div id="thumbnail1">
+					<b>Bold Text</b>, <i>Italic Text</i>, <u>Underlined Text</u><br>
+					<em>Emphasized Text</em>, <strong>Strong Text</strong><br>
+					<del>Deleted Text</del>, <ins>Inserted Text</ins><br>
+					<pre>Preformatted Text</pre>
+					<small>Small Text</small><br><br>
+					<abbr title="abbreviation">abbr</abbr><br>
+					<bdo dir="rtl">Life is Starnge</bdo><br>
+					H<sub>2</sub>O<br>
+					<blockquote cite="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man">I am Iron Man.</blockquote>
+					Sergeant James <q>Bucky</q> Barnes<br>
+					
+					<ruby>
+						漢<rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+					</ruby><br>
+					<ruby>
+						極速<rp>Maximum Speed</rp>
+					</ruby><br>
+					<ruby>
+						中里綺羅
+					</ruby><br>
+					<ruby>
+						神風<rp>Divine Wind</rp>
+					</ruby><br>
+					<ruby>
+						佐藤徹
+					</ruby><br>
+					<ruby>
+						藤原とうふ店
+					</ruby>
+					
+					<br>
+					
+					<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+					<script>
+						var c = document.getElementById("myCanvas");
+						var ctx = c.getContext("2d");
+						ctx.fillStyle = "#FF0000";
+						ctx.fillRect(0, 0, 80, 100);
+					</script>
+					
+					<p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p> 
+					<p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p> 
+					
+					<p><s>My car is black.</s></p>
+					<p>My new car is red.</p> 
+					
+					<article>
+						<h1>Google Chrome</h1>
+						<p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+					</article> 
+					<aside>
+						<h1>Google Chrome</h1>
+						<p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+					</aside>
+				</div>
+				
+				<div id="spotify">
+					<details>
+						<summary>Akib Ahmed</summary>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EM1M4BYERQyfV">2020</a></div>
+					</details>
+					<details>
+						<summary>Meraj al Maksud</summary>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EttyZlMf0Ol0H">2019</a></div>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EM9g6ND1pYcZu">2020</a></div>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EUMDoJuT8yJsl">2021</a></div>
+					</details>
+					<details>
+						<summary>Mehrab al Maksud</summary>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EMefZlb9Q7FfQ">2020</a></div>
+					</details>
+					<details>
+						<summary>Sezan Ahmed</summary>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1Etm0t4JAqGfdT">2019</a></div>
+						<div><a href="https://open.spotify.com/playlist/37i9dQZF1EMgMJ8hyA1Srf">2020</a></div>
+					</details>
+				</div>
+				
+				<br><hr><br>
+				
+				<center><cite>Grand Theft Auto</cite><br></center>
+				
+				<br>
+				
+	<!-- Table starts Here -->
+				<table id="personal-belongings">
+					<caption>Personal belongings</caption>
+					
+					<colgroup>
+						<col span="1" style="background-color: silver">
+						<col span="1" style="background-color: green">
+						<col span="1" style="background-color: #79B">
+						<col span="1" style="background-color: hsl(15, 100%, 55%)">
+					</colgroup>
+					
+					<tr>
+						<th></th>
+						<th style="text-align:center">
+							Franklin
+						</th>
+						<th style="text-align:center">
+							Michael
+						</th>
+						<th style="text-align:center">
+							Trevor
+						</th>
+					</tr>
+					<tr>
+						<th>Mobile Phone</th>
+						<td>Badger Bittersweet</td>
+						<td>iFruit 9iX</td>
+						<td>Facade</td>
+					</tr>
+					<tr>
+						<th>Bicyle</th>
+						<td style="background-color:black"></td>
+						<td>Scorcher</td>
+						<td style="background-color:black"></td>
+					</tr>
+					<tr>
+						<th>Automobile</th>
+						<td>Bravado Buffalo S</td>
+						<td>Obey Tailgater</td>
+						<td>Canis Bodhi</td>
+					</tr>
+					<tr>
+						<th>Motorcycle</th>
+						<td>WMC Bagger</td>
+						<td style="background-color:black"></td>
+						<td>Nagasaki Hot Rod Blazer</td>
+					</tr>
+					<tr>
+						<th>Boat</th>
+						<td colspan="3" style="background-color:silver">Speedophile Seashark</td>
+					</tr>
+					<tr>
+						<th>Helicopter</th>
+						<td style="background-color:silver"></td>
+						<td colspan="2" style="background-color:silver">Maibatsu Frogger</td>
+					</tr>
+					<tr>
+						<th>Plane</th>
+						<td style="background-color:black"></td>
+						<td>Mallard</td>
+						<td>Western Cuban 800</td>
+					</tr>
+				</table>
+				
+				<dialog open>New Window</dialog>
+				
+				<br><hr><br>
+
+	<!--			
+				Machine readable data inside:
+				<ul>
+					<li><data value="21053">Cherry Tomato</data></li>
+					<li><data value="21054">Beef Tomato</data></li>
+					<li><data value="21055">Snack Tomato</data></li>
+				</ul> 
+	-->			
+				
+				<br>
+				
+				<div id="listdirect">
+					Unordered list
+					<ul>
+						<li>Default: Disc</li>
+						<li>Solid Circle</li>
+						<li>Round</li>
+					</ul>
+					
+					<ul type="square">
+						<li>Solid Square</li>
+						<li>Franklin</li>
+						<li>Michael</li>
+						<li>Trevor</li>
+					</ul>
+					
+					<ul type="circle">
+						<li>Hollow Circle</li>
+						<li>Circle in the Sand</li>
+					</ul>
+					
+					<ul type="none">
+						<li>Unmarked Cruiser</li>
+						<li>Police Cruiser</li>
+						<li>Sheriff Cruiser</li>
+						<li>NOOSE Cruiser</li>
+					</ul>
+					
+					Ordered list
+					<ol start="-1">
+						<li>Hello from the other side</li>
+						<li>Numerical</li>
+						<li>Default: 1 (One)</li>
+						<li>Two</li>
+						<li>Three</li>
+						<li>Four</li>
+					</ol>
+					
+					<ol type="A">
+						<li>Capital</li>
+						<li>Alphabet</li>
+						<li>City</li>
+						<li>Liberty City</li>
+						<li>Alderny</li>
+						<li>Vice City</li>
+						<li>Los Santos</li>
+						<li>San Fierro</li>
+						<li>Las Venturas</li>
+						<li>North Yankton</li>
+						<li>South Yankton</li>
+						<li>Carcer City</li>
+					</ol>
+					
+					<ol type="a">
+						<li>Small</li>
+						<li>Letter</li>
+						<li>Countryside</li>
+						<li>County</li>
+						<li>Red County</li>
+						<li>Flint County</li>
+						<li>Foster Valley</li>
+						<li>Tierra Robada</li>
+						<li>Bone County</li>
+						<li>Blaine County</li>
+					</ol>
+					
+					<ol type="I">
+						<li>Roman</li>
+						<li>Capital</li>
+						<li>Niko Bellic (Belik)</li>
+						<li>Roman Bellic (Belik)</li>
+					</ol>
+					
+					<ol type="i">
+						<li>Roman Small</li>
+						<li>Hello, World!</li>
+					</ol>
+					
+					<dl>
+						<dt>Processor</dt>
+						<dd>Intel Core i5-8250U</dd>
+						<dt>RAM</dt>
+						<dd>16GB</dd>
+						<dt>HDD</dt>
+						<dd>WDC WD10 1TB</dd>
+						<dt>SSD</dt>
+						<dd>Force MP510 120GB</dd>
+						<dt>Graphics</dt>
+						<dd>nVidia GeForce 940MX 8GB</dd>
+					</dl>
+				</div>
+				
+				<hr>
+				
+				<details>
+					<summary>C</summary>
+					<code>
+						#include &lt;stdio.h&gt;<br><br>
+						int main{<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;int a, b; scanf("%d %d", &a, &b);<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello, World!\n");<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;printf("%d + %d = %d\n", a, b, a+b);<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+						}<br>
+					</code>
+					
+					<br>
+						
+					Variables:<br>
+					<var>
+						int a;<br>int b;<br>
+					</var>
+					
+					<br>
+					
+					Sample Input:<br>
+					<kbd>
+						9 16<br>
+					</kbd>
+					
+					<br>
+					
+					Sample Output:<br>
+					<samp>
+						Hello, World!<br>
+						9 + 16 = 25<br>
+					</samp>
+					<br>
+				</details>
+				
+				<details>
+					<summary>C++</summary>
+					<code>
+						#include &lt;iostream&gt;<br><br>
+						using namespace std;<br><br>
+						int main{<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;int a, b; cin >> a >> b;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;cout << "Hello, World!" << endl;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;cout << a << " + " << b << " = " << a+b << endl;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+						}<br>
+					</code>
+					
+					<br>
+						
+					Variables:<br>
+					<var>
+						int a;<br>int b;<br>
+					</var>
+					
+					<br>
+					
+					Sample Input:<br>
+					<kbd>
+						9 16<br>
+					</kbd>
+					
+					<br>
+					
+					Sample Output:<br>
+					<samp>
+						Hello, World!<br>
+						9 + 16 = 25<br>
+					</samp>
+					<br>
+				</details>
+					
+				<details>
+					<summary>Python 3</summary>
+					<code>
+						a, b = input().split()<br>
+						a = int(); b = int()<br>
+						print("Hello, World!")<br>
+						print(str(a) + " + " + str(b) + " = " + str(a+b))<br>
+					</code>
+						
+					<br>
+					
+					Variables:<br>
+					<var>
+						int a;<br>
+						int b;<br>
+					</var>
+						
+					<br>
+						
+					Sample Input:<br>
+					<kbd>
+						9 16<br>
+					</kbd>
+						
+					<br>
+						
+					Sample Output:<br>
+					<samp>
+						Hello, World!<br>
+						9 + 16 = 25<br>
+					</samp>
+					<br>
+				</details>
+					
+				<details>
+					<summary>JavaScript</summary>
+					<div id="demo"></div>
+					<script>
+						document.getElementById("demo").innerHTML = "Hello, World!";
+					</script>
+					<noscript>Your browser does not support JavaScript!</noscript>
+				</details>
+				
+				<br>
+			
+				<textarea name="code" class="c++" cols="60" rows="10"> </textarea>
+				
+				<center><a href="#jumptotop">Jump to top</a><br><br></center>
+				
+			</main>
+			
+			<script src="https://ideone.com/e.js/nZ37Qo" type="text/javascript" ></script>
+			
+			<footer id="droptobottom">
+				Author: <a href="mailto:merajmasuk@gmail.com">Meraj al Maksud</a>.<br>
+				<a href="https://stackexchange.com/users/8496458/meraj-al-maksud">
+					<img src="https://stackexchange.com/users/flair/8496458.png?theme=dark" width="208" height="58" alt="profile for Meraj al Maksud on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Meraj al Maksud on Stack Exchange, a network of free, community-driven Q&amp;A sites" />
+				</a>
+				<a href="http://www.nerdtests.com/ft_nq.php">
+					<img src="http://www.nerdtests.com/images/ft/nq/37c30201f7.gif" alt="I am nerdier than 80% of all people. Are you a nerd? Click here to take the Nerd Test, get nerdy images and jokes, and talk on the nerd forum!">
+				</a>
+				<a href="http://www.nerdtests.com/ft_nt2.php">
+					<img src="http://www.nerdtests.com/images/badge/nt2/83b7f762976577bc.png" alt="NerdTests.com says I'm a Highly Dorky Nerd.  Click here to take the Nerd Test, get nerdy images and jokes, and write on the nerd forum!">
+				</a>
+				<br>
+				Address:<br>
+				<address>
+					Qtr No-390/J-1, BAF Base Bangabandhu<br>
+					Dhaka Cantt.<br>
+					Dhaka-1206<br>
+					Bangladesh<br>
+				</address> 
+			</footer>
+		</section>
+		
+	</body>
+
+</html>
