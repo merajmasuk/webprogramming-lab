@@ -10,3 +10,9 @@ class Student(models.Model):
 
     def __str__(self):
         return f'{self.name} reg {self.reg_no}'
+
+    def __iter__(self):
+        yield 'name', self.name
+        yield 'present_address', self.present_address
+        yield 'registration_date', self.registration_date
+        yield 'reg_no', self.reg_no
