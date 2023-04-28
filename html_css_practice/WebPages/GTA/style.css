@@ -1,0 +1,70 @@
+body {
+	font-family: Roboto Condensed;
+	background-color: hsl(0, 0%, 25%);
+	color: white;
+	padding: 2px 5px 2px 5px;
+}
+
+table {
+	border: 2px solid #ccc;
+	border-collapse: collapse;
+	width: 100%;
+}
+caption{
+	font-family: pricedown;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-collapse: collapse;
+	background-color: hsla(0, 0%, 50%, 1);
+	padding: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+th {
+	border: 2px solid #ccc;
+	padding: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: hsla(0, 0%, 50%, 1);
+	width: 10%;
+}
+td {
+	border: 1px solid #ccc;
+	border-right: 2px solid #ccc;
+	padding: 8px;
+	width: 15%;
+}
+#head {
+	border: 2px solid;
+	background-color: hsla(0, 0%, 50%, 1);
+	text-align: center;
+	font-weight: bold;
+}
+
+#navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+	width: 100%;
+}
+nav li {
+	display: inline;
+	border: 2px solid;
+	padding: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: hsla(0, 0%, 50%, 1);
+	width: 100%;
+}
+.first{
+	border-top: 0px solid hsl(0, 0%, 25%);;
+}
+.last-one {
+	border-bottom: 2px solid;
+}

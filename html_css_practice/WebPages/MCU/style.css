@@ -1,0 +1,56 @@
+body {
+	font-family: Roboto Condensed;
+	background: #1f1f1ft !important;
+		background-color: rgb(31, 31, 31);
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-image: none;
+		background-size: auto;
+		background-origin: padding-box;
+		background-clip: border-box;
+	color: white;
+	padding: 2px 5px 2px 5px;
+	-webkit-font-smoothing: antialiased;
+}
+
+table {
+	border: 2px solid;
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: hsla(210, 10%, 30%, 1);
+}
+td {
+	border: 1px solid #ccc;
+	text-align: center;
+	width: 16%;
+	padding: 8px;
+}
+
+hr {
+	border: 1px solid #ccc;
+}
+
+.title {
+	border-bottom: 2px solid;
+}
+.group {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+
+.deceased{
+	color: hsl(10, 100%, 55%);
+}
+.retired{
+	color: hsl(200, 100%, 55%);
+}
+.unknown{
+	color: silver;
+}

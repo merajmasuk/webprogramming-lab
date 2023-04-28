@@ -1,0 +1,32 @@
+
+body {
+	font-family: Roboto Condensed;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+th {
+	background-color: rgb(28, 5, 47);
+	border: 1px solid #000;
+	color: white;
+	width: 160px;
+}
+
+td {
+	background-color: rgb(157, 134, 190);
+	border: 1px solid #000;
+	color: black;
+	width: 160px;
+}
+
+#titlebar {
+	height: 35px;
+}
+#rest {
+	height: 65px;
+}
+

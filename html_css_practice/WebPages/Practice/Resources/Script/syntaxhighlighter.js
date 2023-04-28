@@ -1,0 +1,1 @@
+dp.SyntaxHighlighter.ClipboardSwf = '/flash/clipboard.swf'; dp.SyntaxHighlighter.HighlightAll('code');

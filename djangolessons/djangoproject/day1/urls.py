@@ -7,4 +7,3 @@ urlpatterns = [
     path('std_detail/<str:reg>/', views.GetStudent, name='std_detail'),
     path('delete/<str:id>', views.DeleteStudent, name='delete'),
     path('update/<str:id>', views.UpdateStudent, name='update'),
-]

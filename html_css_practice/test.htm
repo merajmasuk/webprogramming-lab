@@ -1,0 +1,129 @@
+<html>
+
+<head>
+	<title>Test</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/myi3eau.css">
+	<link rel="stylesheet" type="text/css" href="test.css">
+	
+	<script src="function.js"></script>
+</head>
+
+<style>
+	body {
+		font-family: Roboto Condensed;
+		/*background-color: hsl(0, 0%, 25%);*/
+		/*color: white;*/
+		padding: 2px 5px 2px 5px;
+	}
+	
+	table {
+		border: 2px solid;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	
+	caption {
+		font-weight: bold;
+		border: 2px solid;
+		border-collapse: collapse;
+		padding: 8px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	th {
+		border: 2px solid;
+		padding: 8px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: hsla(0, 0%, 50%, 1);
+	}
+	td {
+		border: 1px solid #ccc;
+		padding: 8px;
+	}
+	
+	#preview-01 img {
+	  height: 30vw;
+	  width: 80vw;
+	  object-fit: cover;
+	  opacity: 0;
+	  transition: all .33s ease-in-out;
+	}
+</style>
+
+<body onload="myFunction()">
+
+	<table id="myTable">
+		<caption>TableCaption</caption>
+	
+		<tr>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+			<th>TableHeader</th>
+		</tr>
+		<tr>
+			<th rowspan="2">SpannedRow1</th>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+		</tr>
+		<tr>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+		</tr>
+		<tr>
+			<th rowspan="2">SpannedRow1</th>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+		</tr>
+		<tr>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+			<td>TableData</td>
+		</tr>
+	</table>
+
+<!--	<button onclick="myFunction()">Try it</button> -->
+
+<section class="projects">
+    <section id="project-list">
+        <p id="america-regular-list"><a id="fromdesigner" href="" onmouseover="imgShow()" onmouseleave="imgHide()">
+			From Designer to Designer
+		</a></p>
+        <p id="america-regular-list"><a href="">Wasted Time</a></p>
+        <p id="america-regular-list"><a href="">Thirty Logos</a></p>
+        <p id="america-regular-list"><a href="">Aesthetic Posters</a></p>
+    </section>
+</section>
+<section class="preview">
+    <section id="preview-01"><img id="preview-01-img" src="https://i.imgur.com/J67Ukc8.jpg"/></section>
+</section>
+
+</body>
+
+</html>

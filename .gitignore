@@ -112,6 +112,17 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+bin/
+lib64
+*.cfg
+
+# Conda
+compiler_compat/
+conda-meta/
+include/
+man/
+share/
+ssl/
 
 # Spyder project settings
 .spyderproject
@@ -121,7 +132,7 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
+*/site
 
 # mypy
 .mypy_cache/
@@ -131,5 +142,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# migrations
+*/migrations/
 
-migrations/
+# others
+*.json
