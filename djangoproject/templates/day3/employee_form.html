@@ -2,8 +2,8 @@
     {% csrf_token %}
     <table class="table">
     {{form.as_table}}
+    </table>
     <input type="submit" value="Submit">
     <input type="submit" onclick="window.location='{% url 'day3:all' %}'; return
     false;" value="Cancel">
-    </form>
-    
+</form>
