@@ -1,0 +1,6 @@
+
+day1 : CRUD ops
+day2 : VSCODE
+day3 : built-in view classes
+day4 : REST API
+day5 : Mixins & Generics

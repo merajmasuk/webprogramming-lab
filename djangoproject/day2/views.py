@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
-def HelloWorld(request):
+def hello_world(request):
     return render(request, 'placeholder.html')
