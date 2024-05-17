@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 public class StudentConfig {
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository repository) {
-        System.out.println("Hello");
         return args -> {
             Student meraj = new Student(
                 "Meraj al Maksud",
